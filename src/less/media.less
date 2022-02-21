@@ -1,0 +1,59 @@
+// out: ../css/index.css
+
+// sm
+@media (max-width: 1024px) {
+  .menu-group {
+    padding: 20px;
+    
+    .menu-btns {
+      display: none;
+    }
+  }
+
+  .right-btns {
+    display: none;
+  }
+
+  .hint-holder {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+
+    h2 {
+      text-align: center;
+      color: #ffffff;
+      margin: 0 0 40px;
+    }
+
+    .img-holder {
+      width: 100px;
+      margin: 0 auto;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        vertical-align: top;
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+
+  .btns {
+    padding: 40px;
+  }
+
+  .menu-btns {
+    display: flex;
+  }
+
+  .hint-holder {
+    display: none;
+  }
+}
