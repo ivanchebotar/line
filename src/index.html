@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+  <title>the Line</title>
+</head>
+<body>
+  <canvas id="line"></canvas>
+  <div class="menu">
+    <div class="wrapper">
+      <div class="menu-group">
+        <div class="logo">
+          <img src="img/logo.svg" alt="the line">
+        </div>
+        <div class="menu-btns">
+          <div class="btns delete">
+            <span class="fas fa-trash"></span>
+            <h3 class="btn-title">Delete</h3>
+          </div>
+          <div class="btns play">
+            <span class="fas fa-play"></span>
+            <h3 class="btn-title">Play</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="right-btns">
+    <div class="btns-group">
+      <button class="btn" data-btn="#b1">
+        <span class="fas fa-paint-brush"></span>
+      </button>
+      <button class="btn" data-btn="#b2">
+        <span class="fas fa-palette"></span>
+      </button>
+      <button class="btn" data-btn="#b3">
+        <span class="fas fa-eraser"></span>
+      </button>
+    </div>
+    <div class="dropdown">
+      <div class="side-menu" id="b1">
+        <div class="stroke-block">
+          <div class="stroke-items" data-stroke="2">
+            <p>2px</p>
+            <div class="height" style="height: 2px"></div>
+          </div>
+          <div class="stroke-items" data-stroke="5">
+            <p>5px</p>
+            <div class="height five" style="height: 5px"></div>
+          </div>
+          <div class="stroke-items" data-stroke="10">
+            <p>10px</p>
+            <div class="height ten" style="height: 10px"></div>
+          </div>
+          <div class="stroke-items" data-stroke="15">
+            <p>15px</p>
+            <div class="height fifteen" style="height: 15px"></div>
+          </div>
+          <div class="stroke-items" data-stroke="20">
+            <p>20px</p>
+            <div class="height twenty" style="height: 20px"></div>
+          </div>
+        </div>
+      </div>
+      <div class="side-menu fill" id="b2">
+        <div class="color-block">
+          <div style="background-color: #01b05c;" class="color" data-fill="#01b05c"></div>
+        </div>
+        <div class="color-block">
+          <div style="background-color: #0E7A46;" class="color" data-fill="#0E7A46"></div>
+        </div>
+        <div class="color-block">
+          <div style="background-color: #C1C1C1;" class="color" data-fill="#C1C1C1"></div>
+        </div>
+        <div class="color-block">
+          <div style="background-color: #fff;" class="color" data-fill="#fff"></div>
+        </div>
+      </div>
+      <div class="side-menu erase" id="b3">
+        <div class="stroke-block">
+          <div class="erazer-items" data-clean="2">
+            <p>2px</p>
+            <div class="height" style="height: 2px"></div>
+          </div>
+          <div class="erazer-items" data-clean="5">
+            <p>5px</p>
+            <div class="height" style="height: 5px"></div>
+          </div>
+          <div class="erazer-items" data-clean="10">
+            <p>10px</p>
+            <div class="height" style="height: 10px"></div>
+          </div>
+          <div class="erazer-items" data-clean="15">
+            <p>15px</p>
+            <div class="height" style="height: 15px"></div>
+          </div>
+          <div class="erazer-items" data-clean="20">
+            <p>20px</p>
+            <div class="height" style="height: 20px"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="hint-holder">
+    <h2>Sorry, this app is desktop only</h2>
+    <div class="img-holder">
+      <img src="img/no-phone.png" alt="phone blocked">
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

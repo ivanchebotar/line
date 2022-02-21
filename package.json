@@ -1,0 +1,21 @@
+{
+  "name": "ivan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "*",
+    "gulp": "3.9.0",
+    "gulp-less": "*",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-to-ico": "^1.0.0"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
+}

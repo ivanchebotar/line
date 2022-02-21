@@ -1,0 +1,180 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+span,
+div,
+p,
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #000000;
+  list-style: none;
+  text-decoration: none;
+  font-weight: normal;
+}
+img {
+  max-width: 100%;
+  vertical-align: top;
+  height: auto;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+canvas {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+.menu {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+  background-color: #272727;
+  box-shadow: 1px -10px 70px 2px rgba(0, 0, 0, 0.1);
+}
+.menu .menu-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu .menu-group .logo {
+  width: 90px;
+}
+.menu .menu-group .menu-btns {
+  align-items: center;
+}
+.menu .menu-group .menu-btns .btns {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+  padding: 15px 0;
+}
+.menu .menu-group .menu-btns .btns .fas {
+  font-size: 20px;
+  color: #01b05c;
+  padding-right: 15px;
+}
+.menu .menu-group .menu-btns .btns:hover {
+  border-bottom: 2px solid #01b05c;
+}
+.menu .menu-group .menu-btns .btns .btn-title {
+  color: #ffffff;
+  font-size: 14px;
+}
+.right-btns {
+  position: absolute;
+  z-index: 100;
+  top: 40%;
+  right: 0;
+  align-items: center;
+  background-color: #121212;
+  display: flex;
+}
+.right-btns .btns-group .btn {
+  outline: none;
+  background-color: #272727;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 0 20px 20px 0;
+}
+.right-btns .btns-group .btn .fas {
+  font-size: 20px;
+  color: #01b05c;
+}
+.right-btns .btns-group .btn:hover {
+  border: 1px solid #01b05c;
+}
+.right-btns .dropdown {
+  position: relative;
+}
+.right-btns .dropdown .side-menu {
+  background-color: #272727;
+  position: absolute;
+  right: 80px;
+  top: -98px;
+  width: 150px;
+  border-radius: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.right-btns .dropdown .side-menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(10px);
+}
+.right-btns .dropdown .side-menu .stroke-block .stroke-items,
+.right-btns .dropdown .side-menu .stroke-block .erazer-items {
+  padding: 5px 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.right-btns .dropdown .side-menu .stroke-block .stroke-items:hover,
+.right-btns .dropdown .side-menu .stroke-block .erazer-items:hover {
+  background-color: #353535;
+}
+.right-btns .dropdown .side-menu .stroke-block .stroke-items p,
+.right-btns .dropdown .side-menu .stroke-block .erazer-items p {
+  text-align: center;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+.right-btns .dropdown .side-menu .stroke-block .stroke-items .height,
+.right-btns .dropdown .side-menu .stroke-block .erazer-items .height {
+  box-sizing: border-box;
+  width: 100%;
+  height: 2px;
+  margin: 10px 0;
+  background-color: #01b05c;
+  border-radius: 50px;
+}
+.right-btns .dropdown .side-menu.fill {
+  top: -40px;
+}
+.right-btns .dropdown .side-menu.fill .color-block {
+  padding: 5px 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.right-btns .dropdown .side-menu.fill .color-block:hover {
+  background-color: #353535;
+}
+.right-btns .dropdown .side-menu.fill .color-block .color {
+  box-sizing: border-box;
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+  background-color: #01b05c;
+  border-radius: 50px;
+}
+.right-btns .dropdown .side-menu.erase {
+  top: 20px;
+}
